@@ -1,0 +1,84 @@
+ .Toggle{
+  text-align: center;
+  width: 14%;
+  border-radius: 58%;
+  margin-right: -6px;
+  display: n;
+}
+
+ .Toggle_switch_box{
+  position: relative;
+  width: 95%;
+  display: inline-block;
+  text-align: left;
+  top: 3px;
+  border-radius: 24px;
+  background-color: #cff80b;
+  z-index: 11111111111;
+  overflow: hidden;
+}
+ .Toggle_checkbox{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 4rem;
+       display: none;   
+} 
+.Toggle_label{
+  display: block;
+  cursor: pointer;
+  border: 0px solid #bbb;
+  border-radius: 53px;
+  margin-left: 31px;
+} 
+.Toggle_inner{
+  display: block;
+  width: 209%;
+  margin-left: -87%;
+}
+ .Toggle_inner:before, .Toggle_inner:after {
+float: left;
+width:50%;
+height:27px;
+padding:0;
+line-height: 29px;
+color:#fff;
+background-color:#cff80b ;
+ color:#1e1e1e1e;
+font-weight: bold;
+box-sizing: border-box;
+font-size: 12px;
+}   
+
+.Toggle_inner:before{
+  content: 'Yes';
+  padding-left: 3px;
+  text-align: center;
+ 
+}
+.Toggle_inner:after{
+  content: 'No';
+  padding-right: 14px;
+  text-align: -webkit-left;
+} 
+.Toggle_switch{
+  display: block;
+  width: 24px;
+  margin: 5px;
+  background-color: #ff2257;
+  position: absolute;
+  top: -4px;
+  bottom: 0;
+  right: -3px;
+  border: 0 solid #bbb;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+  height: 25px;
+  right: 2px;
+
+}
+ /* .Toggle_checkbox:checked+ .Toggle_label .Toggle_inner{
+    margin-left:0%;
+}   */
+.Toggle_checkbox:checked+ .Toggle_label .Toggle_switch{
+     right:36%;
+}   
